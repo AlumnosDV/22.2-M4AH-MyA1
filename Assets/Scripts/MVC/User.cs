@@ -5,16 +5,16 @@ using Cinemachine;
 
 public class User : MonoBehaviour
 {
-    [SerializeField] Model model;
-    [SerializeField] View view;
-    [SerializeField] Controller controller;
+    Model model;
+    View view;
+    Controller controller;
 
     [SerializeField] Human human;
     [SerializeField] Car car;
     
-
     private void Start()
     {
+
         //Configuro Controllers
         human.Controller.Horizontal += WrapHorizontalInput;
         human.Controller.Vertical += WrapVerticalInput;
@@ -28,6 +28,13 @@ public class User : MonoBehaviour
         ChangeModel(human.Model);
         ChangeView(human.View);
     }
+
+    public void CambiarCAR()
+    {
+        model = car.Model;
+    }
+
+
     public void WrapHighProfile(bool highProfile) 
     {
         model.HighProfileInput(highProfile);
