@@ -1,3 +1,5 @@
+
+[System.Serializable]
 public abstract class MVCComponent : IActivable, IDeactivable
 {
     bool isActive = false;

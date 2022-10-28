@@ -1,4 +1,5 @@
 using UnityEngine;
+[System.Serializable]
 public abstract class Model : MVCComponent
 {
     protected Vector2 Move => move.normalized;
