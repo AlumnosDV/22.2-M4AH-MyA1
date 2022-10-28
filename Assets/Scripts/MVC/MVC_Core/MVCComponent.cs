@@ -2,21 +2,27 @@
 [System.Serializable]
 public abstract class MVCComponent : IActivable, IDeactivable
 {
-    bool isActive = false;
-    void IActivable.Activate() => isActive = true;
-    void IDeactivable.Deactivate() => isActive = false;
+    void IActivable.Activate() { OnActive(); }
+    void IDeactivable.Deactivate() { OnDeactive(); }
+
+    protected virtual void OnActive()
+    {
+
+    }
+    protected virtual void OnDeactive()
+    {
+
+    }
 
 
     /// PÚBLICOS, ( Se alimentan de afuera )
-    public void FEED_FixedUpdate(float DeltaTime)
+    public void FEED_FixedUpdate(float FixedDeltaTime)
     {
-        if (isActive == false) return;
-        Update(DeltaTime);
-    }
-    public void FEED_Update(float FixedDeltaTime)
-    {
-        if (isActive == false) return;
         FixedUpdate(FixedDeltaTime);
+    }
+    public void FEED_Update(float DeltaTime)
+    {
+        Update(DeltaTime);
     }
 
     /// PROTEGIDOS ( para overridear )

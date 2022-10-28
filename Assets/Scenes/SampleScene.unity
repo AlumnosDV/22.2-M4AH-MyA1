@@ -404,7 +404,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 327087459}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 08372240e3041aa46b3b3925c531d583, type: 3}
   m_Name: 
@@ -1177,6 +1177,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd8564041e1bd0740a051cd12ad49e59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  human:
+    model:
+      myRig: {fileID: 327087461}
+      walkspeed: 200
+      runspeed: 400
+      root: {fileID: 1667857218}
+      root_lookspeed: 20
+    view:
+      camera: {fileID: 1305709227}
+      anim: {fileID: 786375265}
+  car:
+    model:
+      speed: 5
+      root: {fileID: 963987715}
+      rotationSpeed: 0.45
+    view:
+      camera: {fileID: 619467588}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1964,8 +1981,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.35766265, y: -0.004960475, z: 0.0018998807, w: 0.9338358}
-  m_LocalPosition: {x: 0.08, y: 6.76, z: -7.53}
+  m_LocalRotation: {x: 0.3715413, y: -0.00000002842036, z: 0.000000011373494, w: 0.92841643}
+  m_LocalPosition: {x: -6.09, y: 9.53, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3530,7 +3547,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1792322161
 Transform:
   m_ObjectHideFlags: 0

@@ -1,12 +1,13 @@
 using UnityEngine;
 
+[System.Serializable]
 public class Human_View : View
 {
+    [SerializeField] Animator anim;
 
-    Animator anim;
-    public void RefreshMovement(float velocitymagnitude)
+    protected override void Update(float DeltaTime)
     {
         if (!anim) return;
-        anim.SetBool("Move", velocitymagnitude > 0.2f);
+        anim.SetFloat("movespeed", Move3D.normalized.magnitude * (HighProfile ? 1 :0.5f));
     }
 }

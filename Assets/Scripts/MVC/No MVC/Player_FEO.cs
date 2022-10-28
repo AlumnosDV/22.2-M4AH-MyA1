@@ -63,7 +63,6 @@ public class Player_FEO : MonoBehaviour
     void RefreshAnimator()
     {
         if (!anim) return;
-        Debug.Log(myRig.velocity.normalized.magnitude * Thresholds);
         anim.SetFloat("movespeed", myRig.velocity.normalized.magnitude * Thresholds);
     }
 }

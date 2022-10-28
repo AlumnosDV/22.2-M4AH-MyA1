@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PlayerCommand" Collapsed="true">
+    <Position X="14.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAgEAACAAAAEAAAAAAKAAAAAIAAAAAAAAAAAIggA=</HashCode>
+      <FileName>Assets\Scripts\Command\PlayerCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Car" Collapsed="true">
+    <Position X="14.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAEAAAAAAAAAAAABAAAAAQgAAAAIAAA=</HashCode>
+      <FileName>Assets\Scripts\MVC\MVC_Car\Car.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Car_Controller" Collapsed="true">
+    <Position X="5.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\MVC\MVC_Car\Car_Controller.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Car_Model" Collapsed="true">
+    <Position X="9.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAgAAAACAACAQAACABAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\MVC\MVC_Car\Car_Model.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Car_View" Collapsed="true">
+    <Position X="3" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\MVC\MVC_Car\Car_View.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Controller" Collapsed="true">
+    <Position X="6.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAABAAAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\MVC\MVC_Core\Controller.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model" Collapsed="true">
+    <Position X="10.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAICAAACAAAAAAAIAAAAAAAAAAgAACAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\MVC\MVC_Core\Model.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MVCComponent" Collapsed="true">
+    <Position X="6.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAgAAAAEAAAAAAgAACAACAEAAAAABAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\MVC\MVC_Core\MVCComponent.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="View" Collapsed="true">
+    <Position X="1.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgCAAAAAAAAAAAIACAAiAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\MVC\MVC_Core\View.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Human" Collapsed="true">
+    <Position X="16.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAEAAAAAAAAAAAABAAAAAQgAAAAIAAA=</HashCode>
+      <FileName>Assets\Scripts\MVC\MVC_Human\Human.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Human_Controller" Collapsed="true">
+    <Position X="7.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\MVC\MVC_Human\Human_Controller.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Human_Model" Collapsed="true">
+    <Position X="12" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQAAAAAAgCAAAAAAAAgAAAICAACAAAIAAAAAAABAAA=</HashCode>
+      <FileName>Assets\Scripts\MVC\MVC_Human\Human_Model.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Human_View" Collapsed="true">
+    <Position X="0.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\MVC\MVC_Human\Human_View.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player_FEO" Collapsed="true">
+    <Position X="18" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQAAEAAAkAAAAKAAAAAAABIAAACABAAAQgAAAABAEA=</HashCode>
+      <FileName>Assets\Scripts\MVC\No MVC\Player_FEO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="User">
+    <Position X="14.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAUIBAAAAiAAAAEAAAAAAAAAAAAAAAAAAQgAQQAIAAE=</HashCode>
+      <FileName>Assets\Scripts\MVC\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="ICommand" Collapsed="true">
+    <Position X="16.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Command\ICommand.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="IActivable" Collapsed="true">
+    <Position X="14.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Interfaces\IActivable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="IDeactivable" Collapsed="true">
+    <Position X="18" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Interfaces\IDeactivable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
