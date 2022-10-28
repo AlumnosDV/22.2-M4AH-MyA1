@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class View_PlayerWalk : View
+public class Human_View : View
 {
 
     Animator anim;
