@@ -4,12 +4,24 @@ using UnityEngine;
 
 public class SwordBuilder : MonoBehaviour
 {
-    private void Start()
+    void Start()
     {
-        Sword sword = new Sword_Fire(new Sword_Ice(new Sword_Toxic(null, 24), 73),50);
-        sword.Execute();
+        Sword toxic = new SwordToxic(null, 20);
+        Sword ice = new SwordIce(null, 30);
+        Sword fire = new SwordFire(null, 50);
+
+        //Sword Memory;
+        //for (int i = 0; i < length; i++)
+        //{
+        //    Sword swordBase = Sword(Memory,) ;
+        //}
+        
 
 
-        Debug.Log("El daño total es: " + sword.GetDamage());
+        Sword sword = new SwordFire(new SwordToxic(new SwordIce(null,12), 10), 20);
+
+        sword.TurnOn();
+
+        print(sword.GetDamage());
     }
 }

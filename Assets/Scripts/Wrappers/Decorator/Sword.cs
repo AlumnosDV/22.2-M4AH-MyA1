@@ -1,32 +1,36 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-
-public abstract class Sword 
+public abstract class Sword
 {
-    Sword composition;
-    int damage = 20;
-    public Sword(Sword sword, int damage = 20)
+    //public Sword myDeco { get { return decorator; } }
+    Sword decorator = null;
+    int damage = 0;
+    //string name = "";
+
+    public Sword(Sword decorator, int damage /*, string name*/)
     {
-        composition = sword;
+        this.decorator = decorator;
         this.damage = damage;
     }
 
-    public void Execute()///fire, hielo, toxic
+    public void Decorate(Sword decorator)
     {
-        OnExecute();//fire execute, hielo execute,, toxic execute
-
-        if (composition != null) composition.Execute(); //hielo, toxic, null
+        this.decorator = decorator;
     }
 
-
-
+    public void TurnOn()
+    {
+        Debug.Log(this.ToString());
+        OnTurnOn();
+        decorator?.TurnOn();
+    }
+    protected abstract void OnTurnOn();
     public int GetDamage()
     {
         int aux = damage;
-        if (composition != null) aux += composition.GetDamage();
+        if (decorator != null)
+        {
+            aux += decorator.GetDamage();
+        }
         return aux;
     }
-
-    protected abstract void OnExecute();
 }
