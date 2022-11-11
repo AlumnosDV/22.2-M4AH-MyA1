@@ -21,4 +21,14 @@ public class Rotate : MonoBehaviour
 
         transform.Rotate(XspeedRotation * Time.deltaTime, YspeedRotation * Time.deltaTime, ZspeedRotation * Time.deltaTime);
     }
+
+    //void IPausable.Pause()
+    //{
+    //    throw new System.NotImplementedException();
+    //}
+
+    //void IPausable.Resume()
+    //{
+    //    throw new System.NotImplementedException();
+    //}
 }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ParticleController : MonoBehaviour
+public class ParticleController : MonoBehaviour, IPausable
 {
     ParticleSystem particleSystem;
 
@@ -11,6 +11,7 @@ public class ParticleController : MonoBehaviour
     {
         Invoke("Play", beginOnTime);
         particleSystem = GetComponent<ParticleSystem>();
+        SM.instance.AddPausable(this);
     }
 
     public void Play()
@@ -22,5 +23,13 @@ public class ParticleController : MonoBehaviour
         particleSystem.Pause();
     }
 
-    
+    void IPausable.Pause()
+    {
+        particleSystem.Pause();
+    }
+
+    void IPausable.Resume()
+    {
+        particleSystem.Play();
+    }
 }
